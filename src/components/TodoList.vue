@@ -8,12 +8,15 @@
 </script>
 
 <template>
-  <ul>
-    <li v-for="todo in todos" :key="todo.id">
-      <input v-model="todo.isDone" type="checkbox"/>
-      <span :class="{ 'todo-done': todo.isDone }">{{ todo.content }}</span>
-    </li>
-  </ul>
+  <div v-if="!todos.length">No Todo Here</div>
+  <div v-else>
+    <ul>
+      <li v-for="todo in todos" :key="todo.id">
+        <input v-model="todo.isDone" type="checkbox"/>
+        <span :class="{ 'todo-done': todo.isDone }">{{ todo.content }}</span>
+      </li>
+    </ul>
+  </div>
 
 </template>
 

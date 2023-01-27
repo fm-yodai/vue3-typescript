@@ -9,9 +9,9 @@ import TodoList from './TodoList.vue'
   }
 
   const todos: Ref<Todo[]> = ref([
-    {id: 1, content: 'Study Vue3', isDone: true},
-    {id: 2, content: 'Study TypeScript', isDone: true},
-    {id: 3, content: 'Study Java', isDone: false},
+    // {id: 1, content: 'Study Vue3', isDone: true},
+    // {id: 2, content: 'Study TypeScript', isDone: true},
+    // {id: 3, content: 'Study Java', isDone: false},
   ])
 </script>
 
